@@ -17,8 +17,6 @@ $contra_enviado = isset($_POST['contra']) ? $_POST['contra'] : "No existe contra
 
     echo "fallo";
 }*/
-
-
 $usuario_entrada = "Solersi";
 $contrase_entrada = "1234";
 
