@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método GET POST</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <style>
+        body{
+
+            background-color: rgb(4, 4, 78);
+        }
+        header{
+            width: 60%;
+            margin:10px auto;
+            border-bottom: 1px solid white;
+            padding-bottom: 5px;
+            
+
+        }
+        header h1{
+
+            width: fit-content;
+            color:orange;
+            text-align: center;
+            margin: auto;
+
+        }
+        #usuario{
+
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        #usuario label{
+
+            color:white;
+            font-weight: bold;
+            text-align: right;
+            width: 100%;
+            margin-right: 5px;
+
+        }
+
+        #contra{
+
+            display: flex;
+            width: 30%;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        #contra label{
+
+            color: white;
+            font-weight: bold;
+            text-align: right;
+            width: 100%;
+            margin-right: 5px;
+        }
+        #enviar{
+
+            display: flex;
+            justify-content: center;
+            width: 30%;
+            
+        }
+
+        #respuesta{
+
+            color:rgb(139, 10, 10);
+            width: 30%;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        #submit:hover{
+
+            background-color: rgb(193, 184, 184);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Longin de Usuario</h1>
+    </header>
+
+    <section>
+        <article>
+            <form action="login.php" id="formulario">
+
+                <div id="usuario">
+                    <label for="">Usuario: </label><input type="text", name="usuario" id="usu">
+                </div>
+                <div id="contra">
+                    <label for="">Password:</label><input type="password" name="contra" id="con">
+                </div>
+                <div id="enviar">
+                    <input type="submit" value="Enviar" name="enviar" id="submit">
+                </div>
+            </form>
+        </article>
+        <article>
+            <div id="respuesta">
+
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>
