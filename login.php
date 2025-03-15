@@ -23,8 +23,8 @@ $contrase_entrada = "1234";
 $usuario_enviado = $_POST['usuario'];
 $contra_enviado = $_POST['contra'];
 
-echo "Usuario enviado: " . $usuario_enviado . "<br>";
-echo "Contraseña enviada: " . $contra_enviado . "<br>";
+/*echo "Usuario enviado: " . $usuario_enviado . "<br>";
+echo "Contraseña enviada: " . $contra_enviado . "<br>";*/
 
 if ($usuario_enviado == $usuario_entrada && $contra_enviado == $contrase_entrada) {
     echo "autorizado";

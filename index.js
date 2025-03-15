@@ -23,7 +23,7 @@ $(document).ready(function(){
 
     function procesarDatos(datosEnviados){
 
-        alert(datosEnviados);
+        //alert(datosEnviados);
 
         if(datosEnviados == "autorizado"){
 
