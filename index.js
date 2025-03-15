@@ -23,6 +23,8 @@ $(document).ready(function(){
 
     function procesarDatos(datosEnviados){
 
+        alert(datosEnviados);
+
         if(datosEnviados == "autorizado"){
 
             $("#respuesta").html("<p>Usuairo autorizado, Bienvenido nuevamente</p>");
