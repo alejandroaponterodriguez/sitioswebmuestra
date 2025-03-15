@@ -17,7 +17,7 @@ $(document).ready(function(){
 
         console.log(datosFormularios);
 
-        $.get("login.php", datosFormularios, procesarDatos);
+        //$.get("login.php", datosFormularios, procesarDatos);
 
     });
 
