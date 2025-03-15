@@ -11,7 +11,8 @@ $(document).ready(function(){
 
         }
 
-        $.post("login.php", datosFormularios, procesarDatos);
+        $.post("login.php", datosFormularios, procesarDatos).error(manejoErrores);
+        
 
         //let datosFormularios = $(this).serialize();
 
@@ -23,7 +24,7 @@ $(document).ready(function(){
 
     function procesarDatos(datosEnviados){
 
-        //alert(datosEnviados);
+        alert(datosEnviados);
 
         if(datosEnviados == "autorizado"){
 
@@ -36,6 +37,14 @@ $(document).ready(function(){
         }
 
         
+
+    };
+
+    function manejoErrores(){
+
+        let errorRecibido = "Ooopp!!, no se puedo acceder al login";
+
+        $("#respuesta").html("<p>" + errorRecibido + "</p>");
 
     };
 
